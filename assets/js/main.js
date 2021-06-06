@@ -236,7 +236,7 @@
 						href = $a.attr('href');
 
 					// Not an image? Bail.
-						if (!href.match(/\.(jpg|gif|png|mp4)$/))
+						if (!href.match(/\.(jpg|gif|png|mp4|webp)$/))
 							return;
 
 					// Prevent default.
@@ -319,7 +319,7 @@
 							$modal.trigger('click');
 
 				})
-				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
+				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" alt="Full sample image of the artist" width="100%"/></div></div>')
 					.find('img')
 						.on('load', function(event) {
 
