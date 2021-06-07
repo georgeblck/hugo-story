@@ -1,0 +1,27 @@
+.parent {
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+  flex-flow: wrap;
+}
+.row {
+  flex-direction: row;
+  width: 100%;
+}
+.column {
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.single-column {
+  flex-direction: column;
+  /*flex-basis: 100%;*/
+  flex: 1;
+  font-size: smaller;
+}
+.double-column {
+  flex-direction: column;
+  /*flex-basis: 100%;*/
+  flex: 2;
+  font-size: smaller;
+}
